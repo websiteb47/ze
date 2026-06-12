@@ -27,7 +27,7 @@ export default function Footer() {
               />
             </div>
             <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>
-              India&apos;s trusted manpower solutions provider delivering reliable, skilled, and productive workforce across all major states and cities in India.
+              India&apos;s trusted manpower solutions provider delivering reliable, skilled, and productive workforce across domestic and international markets.
             </p>
             <div style={{ display: "flex", gap: 12 }}>
               {["in", "tw", "fb"].map((s) => (
@@ -74,7 +74,7 @@ export default function Footer() {
               "White Collar Recruitment",
               "Contract Staffing",
               "Construction Manpower",
-              "Pan-India Deployment",
+              "International Recruitment",
             ].map((s) => (
               <div key={s} style={{ color: "rgba(255,255,255,0.6)", fontSize: 14, marginBottom: 10 }}>→ {s}</div>
             ))}
@@ -87,7 +87,7 @@ export default function Footer() {
               {[
                 { icon: "📧", text: "info@zenvoragroup.in" },
                 { icon: "🌐", text: "zenvoragroup.in" },
-                { icon: "📍", text: "Serving Clients Across All Major States in India" },
+                { icon: "📍", text: "Serving Clients Across India & International Markets" },
               ].map(({ icon, text }) => (
                 <div key={text} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                   <span style={{ fontSize: 16, flexShrink: 0 }}>{icon}</span>
@@ -111,7 +111,7 @@ export default function Footer() {
             © 2025 Zenvora Group. All rights reserved.
           </p>
           <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 13 }}>
-            Workforce Solutions | Domestic Staffing | Pan-India Manpower
+            Workforce Solutions | Domestic Staffing | International Recruitment
           </p>
         </div>
       </div>

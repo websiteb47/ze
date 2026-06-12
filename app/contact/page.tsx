@@ -46,7 +46,7 @@ export default function ContactPage() {
               {[
                 { icon: "📧", label: "Email", value: "info@zenvoragroup.in" },
                 { icon: "🌐", label: "Website", value: "zenvoragroup.in" },
-                { icon: "📍", label: "Serving", value: "All Major States Across India" },
+                { icon: "📍", label: "Serving", value: "Pan-India & International Markets" },
               ].map((c) => (
                 <div key={c.label} className="card-glass" style={{ padding: 20, marginBottom: 14, display: "flex", gap: 14, alignItems: "flex-start" }}>
                   <div style={{ fontSize: 26, flexShrink: 0 }}>{c.icon}</div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
               <div style={{ marginTop: 24 }}>
                 <h3 style={{ color: "white", fontWeight: 700, fontSize: 14, marginBottom: 14 }}>We Serve</h3>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                  {["Andhra Pradesh", "Telangana", "Maharashtra", "Karnataka", "Tamil Nadu", "Delhi NCR", "Gujarat", "Pan-India"].map((m) => (
+                  {["🇮🇳 India", "🇦🇪 UAE", "🇺🇸 USA", "🇩🇪 Germany", "🌍 Africa", "🌏 Europe"].map((m) => (
                     <span key={m} style={{
                       background: "rgba(212,160,23,0.1)", border: "1px solid rgba(212,160,23,0.3)",
                       color: "#f0c040", fontSize: 12, padding: "6px 12px", borderRadius: 100, fontWeight: 600,
@@ -183,8 +183,8 @@ export default function ContactPage() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="card-glass" style={{ height: 260, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10 }}>
             <div style={{ fontSize: 44 }}>📍</div>
-            <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 17, textAlign: "center" }}>Serving Clients Across All Major States in India</div>
-            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, textAlign: "center" }}>Pan-India presence covering all major states and cities</div>
+            <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 17, textAlign: "center" }}>Serving Clients Across India & Internationally</div>
+            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, textAlign: "center" }}>Pan-India presence with global reach to UAE, USA, Germany, Europe & Africa</div>
           </div>
         </div>
       </section>

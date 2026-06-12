@@ -3,7 +3,7 @@
 const stats = [
   { num: "500+", label: "Clients Served" },
   { num: "10,000+", label: "Workers Deployed" },
-  { num: "20+", label: "Cities Served" },
+  { num: "15+", label: "Countries Served" },
   { num: "8+", label: "Industries Covered" },
   { num: "99%", label: "Client Satisfaction" },
   { num: "24/7", label: "Support Available" },

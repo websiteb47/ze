@@ -266,3 +266,13 @@ select option { background: #0d1b3e; color: white; }
 .page-offset {
   padding-top: 80px;
 }
+
+/* Navbar height compensation */
+@media (max-width: 768px) {
+  section:first-of-type,
+  div[style*="paddingTop: 120"],
+  div[style*="paddingTop: 96"],
+  div[style*="paddingTop: 110"] {
+    padding-top: 64px !important;
+  }
+}

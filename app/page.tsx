@@ -40,7 +40,7 @@ export default function HomePage() {
         alignItems: "center",
         position: "relative",
         overflow: "hidden",
-        paddingTop: 120,
+        paddingTop: 110,
       }}>
         <div style={{
           position: "absolute", top: "15%", right: "10%",

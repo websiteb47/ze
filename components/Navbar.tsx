@@ -130,8 +130,8 @@ export default function Navbar() {
           .mobile-menu-btn { display: flex !important; }
 
           /* Smaller navbar on mobile */
-          .nav-inner { height: 64px; }
-          .nav-logo { height: 54px; }
+          .nav-inner { height: 100px; }
+          .nav-logo { height: 100px; }
         }
       `}</style>
     </nav>

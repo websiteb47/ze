@@ -75,7 +75,7 @@ export default function CareersPage() {
   };
 
   return (
-    <div style={{ paddingTop: 72, background: "#0a0a1a", minHeight: "100vh" }}>
+    <div style={{ paddingTop: 120, background: "#0a0a1a", minHeight: "100vh" }}>
       {/* Hero */}
       <section style={{
         padding: "80px 24px",
@@ -174,7 +174,7 @@ export default function CareersPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="card-glass" style={{ padding: 40 }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+              <div className="form-row-2">
                 <div>
                   <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Full Name *</label>
                   <input required placeholder="Your full name" value={formData.name}
@@ -186,7 +186,7 @@ export default function CareersPage() {
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                 </div>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+              <div className="form-row-2">
                 <div>
                   <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Phone Number *</label>
                   <input required placeholder="+91 XXXXXXXXXX" value={formData.phone}
@@ -204,7 +204,7 @@ export default function CareersPage() {
                   </select>
                 </div>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+              <div className="form-row-2">
                 <div>
                   <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Years of Experience</label>
                   <select value={formData.experience}

@@ -42,12 +42,12 @@ const serviceCategories = [
     color: "#2a4e1a",
   },
   {
-    icon: "🌍",
-    title: "International Recruitment",
-    subtitle: "Global Workforce Solutions",
-    desc: "Supplying skilled blue-collar and white-collar professionals to UAE, USA, Germany, Europe, Africa, and beyond.",
-    roles: ["UAE & Middle East", "United States", "Germany & Europe", "Africa", "Skilled Blue Collar", "Qualified White Collar"],
-    color: "#1a2a4e",
+    icon: "📍",
+    title: "Pan-India Deployment",
+    subtitle: "Nationwide Workforce Reach",
+    desc: "Rapid and reliable workforce deployment across all major Indian states — Andhra Pradesh, Telangana, Maharashtra, Karnataka, Gujarat, Tamil Nadu, and more.",
+    roles: ["Andhra Pradesh", "Telangana", "Maharashtra", "Karnataka", "Gujarat", "Tamil Nadu", "Delhi NCR", "Pan-India Projects"],
+    color: "#1a3a4e",
   },
   {
     icon: "🏭",
@@ -69,7 +69,7 @@ const serviceCategories = [
 
 export default function ServicesPage() {
   return (
-    <div style={{ paddingTop: 72, background: "#0a0a1a", minHeight: "100vh" }}>
+    <div style={{ paddingTop: 120, background: "#0a0a1a", minHeight: "100vh" }}>
       {/* Hero */}
       <section style={{
         padding: "80px 24px",
@@ -90,7 +90,7 @@ export default function ServicesPage() {
             Our <span className="gradient-text">Services</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 18, lineHeight: 1.8, maxWidth: 600, margin: "0 auto" }}>
-            Comprehensive manpower solutions tailored to your industry needs — from skilled technicians to senior professionals, domestically and internationally.
+            Comprehensive manpower solutions tailored to your industry needs — from skilled technicians to senior professionals, across all major states and cities in India.
           </p>
         </div>
       </section>
@@ -144,7 +144,7 @@ export default function ServicesPage() {
               { icon: "📊", label: "Compliance & Documentation" },
               { icon: "🤝", label: "Dedicated Account Management" },
               { icon: "💰", label: "Cost-Effective Solutions" },
-              { icon: "🌏", label: "Pan-India Talent Reach" },
+              { icon: "🗺️", label: "Deep Local Market Knowledge" },
               { icon: "🔗", label: "Long-Term Partnerships" },
             ].map((item) => (
               <div key={item.label} className="card-glass" style={{ padding: 24, textAlign: "center" }}>

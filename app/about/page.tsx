@@ -12,8 +12,8 @@ const leadership = [
     name: "Ramesh Bonam",
     role: "Technology & Business Advisor",
     qual: "22+ Years Experience",
-    desc: "Technology entrepreneur with 22 years of international experience in South Africa. Founder & CEO of Cloud4sa, delivering 40+ government & private IT projects. Active cross-border business leader bridging India and global markets.",
-    expertise: ["Cloud Solutions", "IT Strategy", "Cross-Border Business", "Real Estate Advisory"],
+    desc: "Technology entrepreneur with 22 years of international experience in South Africa. Founder & CEO of Cloud4sa, delivering 40+ government & private IT projects. Active business leader bridging technology and operations across India.",
+    expertise: ["Cloud Solutions", "IT Strategy", "Pan-India Operations", "Real Estate Advisory"],
   },
 ];
 
@@ -24,24 +24,24 @@ const values = [
   { icon: "🌱", title: "Growth", desc: "Creating opportunities for businesses and job seekers to grow together." },
 ];
 
+const process = [
+  { step: "01", title: "Understanding Requirements", desc: "We analyze client workforce needs and project specifications." },
+  { step: "02", title: "Talent Sourcing", desc: "Identifying suitable candidates through our extensive recruitment network." },
+  { step: "03", title: "Screening & Evaluation", desc: "Candidates undergo thorough assessment and verification." },
+  { step: "04", title: "Deployment", desc: "Qualified personnel deployed efficiently per project timelines." },
+  { step: "05", title: "Ongoing Support", desc: "Continuous workforce management and dedicated client support." },
+];
+
 export default function AboutPage() {
   return (
-    <div style={{ paddingTop: 72, background: "#0a0a1a", minHeight: "100vh" }}>
+    <div style={{ paddingTop: 120, background: "#0a0a1a", minHeight: "100vh" }}>
       {/* Hero */}
       <section style={{
-        padding: "80px 24px",
+        padding: "80px 20px",
         background: "linear-gradient(135deg, #050510 0%, #0d1b3e 50%, #1a0a2e 100%)",
         textAlign: "center",
-        position: "relative",
-        overflow: "hidden",
       }}>
-        <div style={{
-          position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)",
-          width: 600, height: 600,
-          background: "radial-gradient(circle, rgba(212,160,23,0.08) 0%, transparent 70%)",
-          borderRadius: "50%", pointerEvents: "none",
-        }} />
-        <div style={{ position: "relative", zIndex: 1, maxWidth: 800, margin: "0 auto" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <div className="section-divider" />
           <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "white", marginBottom: 20 }}>
             About <span className="gradient-text">Zenvora Group</span>
@@ -53,77 +53,76 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section style={{ padding: "80px 24px", background: "#0a0a1a" }}>
+      <section style={{ padding: "72px 20px", background: "#0a0a1a" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32 }}>
-            <div className="card-glass" style={{ padding: 40 }}>
-              <div style={{ fontSize: 40, marginBottom: 16 }}>🎯</div>
-              <h2 style={{ color: "#f0c040", fontWeight: 800, fontSize: 22, marginBottom: 16 }}>Our Mission</h2>
+          <div className="grid-2col-center">
+            <div className="card-glass" style={{ padding: 36 }}>
+              <div style={{ fontSize: 40, marginBottom: 14 }}>🎯</div>
+              <h2 style={{ color: "#f0c040", fontWeight: 800, fontSize: 22, marginBottom: 14 }}>Our Mission</h2>
               <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, fontSize: 15 }}>
-                To empower businesses with reliable, qualified, and productive workforce solutions while creating meaningful employment opportunities for individuals across India and international markets.
+                To empower businesses with reliable, qualified, and productive workforce solutions while creating meaningful employment opportunities for individuals across India.
               </p>
             </div>
-            <div className="card-glass" style={{ padding: 40 }}>
-              <div style={{ fontSize: 40, marginBottom: 16 }}>🌟</div>
-              <h2 style={{ color: "#f0c040", fontWeight: 800, fontSize: 22, marginBottom: 16 }}>Our Vision</h2>
+            <div className="card-glass" style={{ padding: 36 }}>
+              <div style={{ fontSize: 40, marginBottom: 14 }}>🌟</div>
+              <h2 style={{ color: "#f0c040", fontWeight: 800, fontSize: 22, marginBottom: 14 }}>Our Vision</h2>
               <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, fontSize: 15 }}>
-                To become a globally recognized workforce solutions company connecting talent with opportunities and helping organizations achieve sustainable growth through exceptional human capital.
+                To become India&apos;s most trusted workforce solutions company connecting talent with opportunities and helping organizations achieve sustainable growth through exceptional human capital.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Content */}
-      <section style={{
-        padding: "60px 24px",
-        background: "linear-gradient(180deg, #0a0a1a 0%, #0d1b3e 100%)",
-      }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}>
-          <div>
-            <div className="section-divider" style={{ margin: "0 0 16px 0" }} />
-            <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 20 }}>
-              Delivering Human Capital Solutions That Drive{" "}
-              <span className="gradient-text">Business Success</span>
-            </h2>
-            <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, marginBottom: 20, fontSize: 15 }}>
-              Zenvora Group specializes in manpower supply, workforce management, recruitment, and international staffing solutions. We help organizations overcome workforce challenges by providing qualified personnel for temporary, contract, project-based, and permanent positions.
-            </p>
-            <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, fontSize: 15 }}>
-              With an extensive talent network, industry expertise, and a commitment to quality, we connect employers with skilled professionals and workers who contribute to business growth and operational excellence — whether you require construction laborers in India or highly qualified professionals for international assignments.
-            </p>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-            {[
-              { icon: "🏆", stat: "500+", label: "Satisfied Clients" },
-              { icon: "👷", stat: "10K+", label: "Workers Deployed" },
-              { icon: "🌍", stat: "15+", label: "Countries Served" },
-              { icon: "📅", stat: "5+", label: "Years Experience" },
-            ].map((item) => (
-              <div key={item.label} className="card-glass" style={{ padding: 24, textAlign: "center" }}>
-                <div style={{ fontSize: 32, marginBottom: 10 }}>{item.icon}</div>
-                <div style={{ fontSize: 28, fontWeight: 900, color: "#f0c040" }}>{item.stat}</div>
-                <div style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginTop: 4 }}>{item.label}</div>
-              </div>
-            ))}
+      {/* About content + stats */}
+      <section style={{ padding: "60px 20px", background: "linear-gradient(180deg, #0a0a1a 0%, #0d1b3e 100%)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div className="grid-2col-center">
+            <div>
+              <div className="section-divider" style={{ margin: "0 0 16px 0" }} />
+              <h2 style={{ fontSize: "clamp(1.5rem, 3vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 18 }}>
+                Delivering Human Capital Solutions That Drive{" "}
+                <span className="gradient-text">Business Success</span>
+              </h2>
+              <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, marginBottom: 16, fontSize: 15 }}>
+                Zenvora Group specializes in manpower supply, workforce management, recruitment, and staffing solutions. We help organizations overcome workforce challenges by providing qualified personnel for temporary, contract, project-based, and permanent positions.
+              </p>
+              <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8, fontSize: 15 }}>
+                With an extensive talent network, industry expertise, and a commitment to quality, we connect employers with skilled professionals and workers who contribute to business growth across all major states and cities in India.
+              </p>
+            </div>
+            <div className="grid-2x2">
+              {[
+                { icon: "🏆", stat: "500+", label: "Satisfied Clients" },
+                { icon: "👷", stat: "10K+", label: "Workers Deployed" },
+                { icon: "🏙️", stat: "20+", label: "Cities Served" },
+                { icon: "📅", stat: "5+", label: "Years Experience" },
+              ].map((item) => (
+                <div key={item.label} className="card-glass" style={{ padding: 20, textAlign: "center" }}>
+                  <div style={{ fontSize: 30, marginBottom: 8 }}>{item.icon}</div>
+                  <div style={{ fontSize: 24, fontWeight: 900, color: "#f0c040" }}>{item.stat}</div>
+                  <div style={{ color: "rgba(255,255,255,0.6)", fontSize: 12, marginTop: 4 }}>{item.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section style={{ padding: "80px 24px", background: "#050510" }}>
+      <section style={{ padding: "72px 20px", background: "#050510" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 52 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div className="section-divider" />
-            <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
               Our <span className="gradient-text">Core Values</span>
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
+          <div className="grid-auto-320">
             {values.map((v) => (
-              <div key={v.title} className="card-glass hover-glow" style={{ padding: 32, textAlign: "center", transition: "all 0.3s" }}>
-                <div style={{ fontSize: 44, marginBottom: 16 }}>{v.icon}</div>
-                <h3 style={{ color: "#f0c040", fontWeight: 700, fontSize: 18, marginBottom: 12 }}>{v.title}</h3>
+              <div key={v.title} className="card-glass hover-glow" style={{ padding: 28, textAlign: "center" }}>
+                <div style={{ fontSize: 42, marginBottom: 14 }}>{v.icon}</div>
+                <h3 style={{ color: "#f0c040", fontWeight: 700, fontSize: 17, marginBottom: 10 }}>{v.title}</h3>
                 <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14, lineHeight: 1.7 }}>{v.desc}</p>
               </div>
             ))}
@@ -132,37 +131,35 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section style={{ padding: "80px 24px", background: "linear-gradient(180deg, #0a0a1a 0%, #0d1b3e 100%)" }}>
+      <section style={{ padding: "72px 20px", background: "linear-gradient(180deg, #0a0a1a 0%, #0d1b3e 100%)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 52 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div className="section-divider" />
-            <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
               Leadership <span className="gradient-text">Team</span>
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: 32 }}>
+          <div className="grid-auto-320">
             {leadership.map((l) => (
-              <div key={l.name} className="card-glass" style={{ padding: 36 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20 }}>
+              <div key={l.name} className="card-glass" style={{ padding: 32 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 18 }}>
                   <div style={{
-                    width: 64, height: 64, borderRadius: "50%",
+                    width: 60, height: 60, borderRadius: "50%",
                     background: "linear-gradient(135deg, #d4a017, #f0c040)",
                     display: "flex", alignItems: "center", justifyContent: "center",
-                    fontWeight: 900, color: "#0a0a1a", fontSize: 24,
-                    flexShrink: 0,
+                    fontWeight: 900, color: "#0a0a1a", fontSize: 22, flexShrink: 0,
                   }}>{l.name[0]}</div>
                   <div>
-                    <div style={{ color: "white", fontWeight: 800, fontSize: 17 }}>{l.name}</div>
+                    <div style={{ color: "white", fontWeight: 800, fontSize: 16 }}>{l.name}</div>
                     <div style={{ color: "#f0c040", fontSize: 13, marginTop: 2 }}>{l.role}</div>
                     <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 12, marginTop: 2 }}>{l.qual}</div>
                   </div>
                 </div>
-                <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>{l.desc}</p>
+                <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 14, lineHeight: 1.7, marginBottom: 18 }}>{l.desc}</p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                   {l.expertise.map((e) => (
                     <span key={e} style={{
-                      background: "rgba(212,160,23,0.1)",
-                      border: "1px solid rgba(212,160,23,0.3)",
+                      background: "rgba(212,160,23,0.1)", border: "1px solid rgba(212,160,23,0.3)",
                       color: "#f0c040", fontSize: 11, padding: "4px 12px", borderRadius: 100,
                     }}>{e}</span>
                   ))}
@@ -174,41 +171,26 @@ export default function AboutPage() {
       </section>
 
       {/* Process */}
-      <section style={{ padding: "80px 24px", background: "#050510" }}>
-        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 52 }}>
+      <section style={{ padding: "72px 20px", background: "#050510" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div className="section-divider" />
-            <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
               Our <span className="gradient-text">Process</span>
             </h2>
           </div>
-          <div style={{ display: "flex", gap: 0, flexWrap: "wrap", justifyContent: "center" }}>
-            {[
-              { step: "01", title: "Understanding Requirements", desc: "We analyze client workforce needs and project specifications." },
-              { step: "02", title: "Talent Sourcing", desc: "Identifying suitable candidates through our extensive recruitment network." },
-              { step: "03", title: "Screening & Evaluation", desc: "Candidates undergo thorough assessment and verification." },
-              { step: "04", title: "Deployment", desc: "Qualified personnel deployed efficiently per project timelines." },
-              { step: "05", title: "Ongoing Support", desc: "Continuous workforce management and dedicated client support." },
-            ].map((p, i) => (
-              <div key={p.step} style={{ display: "flex", alignItems: "flex-start", gap: 0 }}>
-                <div style={{ textAlign: "center", maxWidth: 160, padding: "0 12px" }}>
-                  <div style={{
-                    width: 56, height: 56, borderRadius: "50%",
-                    background: "linear-gradient(135deg, #d4a017, #f0c040)",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontWeight: 900, color: "#0a0a1a", fontSize: 16,
-                    margin: "0 auto 16px",
-                  }}>{p.step}</div>
-                  <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 14, marginBottom: 8 }}>{p.title}</div>
-                  <div style={{ color: "rgba(255,255,255,0.6)", fontSize: 12, lineHeight: 1.6 }}>{p.desc}</div>
-                </div>
-                {i < 4 && (
-                  <div style={{
-                    width: 40, height: 2, background: "rgba(212,160,23,0.4)",
-                    marginTop: 28, flexShrink: 0,
-                    display: "flex", alignItems: "center",
-                  }} />
-                )}
+          <div className="grid-auto-320">
+            {process.map((p) => (
+              <div key={p.step} className="card-glass" style={{ padding: 28, textAlign: "center" }}>
+                <div style={{
+                  width: 52, height: 52, borderRadius: "50%",
+                  background: "linear-gradient(135deg, #d4a017, #f0c040)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontWeight: 900, color: "#0a0a1a", fontSize: 15,
+                  margin: "0 auto 16px",
+                }}>{p.step}</div>
+                <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 14, marginBottom: 8 }}>{p.title}</div>
+                <div style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, lineHeight: 1.6 }}>{p.desc}</div>
               </div>
             ))}
           </div>
@@ -216,15 +198,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section style={{
-        padding: "80px 24px", textAlign: "center",
-        background: "linear-gradient(135deg, #0d1b3e 0%, #1a0a2e 100%)",
-      }}>
-        <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 16 }}>
+      <section style={{ padding: "72px 20px", textAlign: "center", background: "linear-gradient(135deg, #0d1b3e 0%, #1a0a2e 100%)" }}>
+        <h2 style={{ fontSize: "clamp(1.5rem, 4vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 14 }}>
           Partner With <span className="gradient-text">Zenvora Group</span>
         </h2>
-        <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 16, marginBottom: 32, maxWidth: 600, margin: "0 auto 32px" }}>
-          Let&apos;s create workforce success together. Contact us today for customized solutions.
+        <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 16, marginBottom: 28, maxWidth: 560, margin: "0 auto 28px" }}>
+          Let&apos;s create workforce success together.
         </p>
         <Link href="/contact" className="btn-primary" style={{ fontSize: 16 }}>Get in Touch →</Link>
       </section>

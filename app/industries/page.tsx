@@ -66,18 +66,22 @@ const industries = [
   },
 ];
 
-const globalMarkets = [
-  { flag: "🇮🇳", country: "India", desc: "Pan-India workforce covering all major states and cities." },
-  { flag: "🇦🇪", country: "UAE & Middle East", desc: "Construction, oil & gas, and corporate professionals." },
-  { flag: "🇺🇸", country: "United States", desc: "IT professionals, engineers, and management executives." },
-  { flag: "🇩🇪", country: "Germany & Europe", desc: "Skilled technicians, engineers, and healthcare workers." },
-  { flag: "🌍", country: "Africa", desc: "Construction and infrastructure project workforce." },
-  { flag: "🌏", country: "Other Markets", desc: "Expanding to new international markets on demand." },
+const panIndiaRegions = [
+  { icon: "🏙️", region: "Andhra Pradesh & Telangana", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Maharashtra & Mumbai", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Karnataka & Bangalore", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Tamil Nadu & Chennai", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Delhi NCR", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Gujarat & Ahmedabad", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Rajasthan", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "West Bengal & Kolkata", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Uttar Pradesh", desc: "Serving construction, manufacturing, and corporate workforce needs." },
+  { icon: "🏙️", region: "Punjab & Haryana", desc: "Serving construction, manufacturing, and corporate workforce needs." },
 ];
 
 export default function IndustriesPage() {
   return (
-    <div style={{ paddingTop: 72, background: "#0a0a1a", minHeight: "100vh" }}>
+    <div style={{ paddingTop: 120, background: "#0a0a1a", minHeight: "100vh" }}>
       {/* Hero */}
       <section style={{
         padding: "80px 24px",
@@ -134,7 +138,7 @@ export default function IndustriesPage() {
         </div>
       </section>
 
-      {/* Global Reach */}
+      {/* Pan-India Reach */}
       <section style={{
         padding: "80px 24px",
         background: "linear-gradient(135deg, #050510 0%, #0d1b3e 100%)",
@@ -143,17 +147,17 @@ export default function IndustriesPage() {
           <div style={{ textAlign: "center", marginBottom: 52 }}>
             <div className="section-divider" />
             <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
-              Our Global <span className="gradient-text">Reach</span>
+              Our Pan-India <span className="gradient-text">Reach</span>
             </h2>
             <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 16, maxWidth: 600, margin: "0 auto" }}>
-              Supplying skilled blue & white collar human resources to India and international markets.
+              Supplying skilled blue & white collar human resources across all major states and cities in India.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 20 }}>
-            {globalMarkets.map((m) => (
-              <div key={m.country} className="card-glass" style={{ padding: 28, textAlign: "center" }}>
-                <div style={{ fontSize: 40, marginBottom: 12 }}>{m.flag}</div>
-                <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 15, marginBottom: 8 }}>{m.country}</div>
+            {panIndiaRegions.map((m) => (
+              <div key={m.region} className="card-glass" style={{ padding: 28, textAlign: "center" }}>
+                <div style={{ fontSize: 40, marginBottom: 12 }}>{m.icon}</div>
+                <div style={{ color: "#f0c040", fontWeight: 700, fontSize: 15, marginBottom: 8 }}>{m.region}</div>
                 <div style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, lineHeight: 1.6 }}>{m.desc}</div>
               </div>
             ))}
@@ -178,9 +182,9 @@ export default function IndustriesPage() {
                 result: "Deployed complete workforce within 3 weeks for a major highway project in Andhra Pradesh, meeting all compliance and timeline requirements.",
               },
               {
-                title: "International Deployment to UAE",
-                industry: "Oil & Gas",
-                result: "Successfully placed 200 skilled welders and electricians for a large oil & gas project in UAE with full visa and documentation support.",
+                title: "1000+ Workers for Highway Project",
+                industry: "Infrastructure",
+                result: "Deployed skilled civil workers across a 200km highway project in Andhra Pradesh, meeting all deadlines with full compliance support.",
               },
               {
                 title: "Corporate Staffing for MNC",

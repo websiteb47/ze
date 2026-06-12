@@ -12,9 +12,9 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Ahmed Al-Rashid",
-    role: "Operations Head, Dubai Contracting Co.",
-    text: "We hired 100+ welders and electricians through Zenvora for our UAE projects. Documentation was seamless and workers were well-trained.",
+    name: "Venkat Rao",
+    role: "GM Operations, Hyderabad Infra Ltd.",
+    text: "Zenvora supplied over 150 skilled workers for our Hyderabad metro project. Deployment was fast, workers were verified, and documentation was perfect.",
     rating: 5,
   },
   {
@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
             What Our <span className="gradient-text">Clients Say</span>
           </h2>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 16 }}>
-            Trusted by hundreds of organizations across India and internationally.
+            Trusted by hundreds of organizations across all major states and cities in India.
           </p>
         </div>
 

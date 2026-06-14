@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 
 const jobListings = [
@@ -75,29 +75,29 @@ export default function CareersPage() {
   };
 
   return (
-    <div style={{ paddingTop: 120, background: "#0a0a1a", minHeight: "100vh" }}>
+    <div style={{ paddingTop: 90, background: "#faf9f7", minHeight: "100vh" }}>
       {/* Hero */}
       <section style={{
         padding: "80px 24px",
-        background: "linear-gradient(135deg, #050510 0%, #0d1b3e 50%, #1a0a2e 100%)",
+        background: "linear-gradient(135deg, #fffef9 0%, #fdf6e8 50%, #fff8f0 100%)",
         textAlign: "center",
       }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <div className="section-divider" />
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "white", marginBottom: 20 }}>
+          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#1a1a1a", marginBottom: 20 }}>
             Build Your Career with <span className="gradient-text">Zenvora</span>
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 18, lineHeight: 1.8 }}>
+          <p style={{ color: "#666", fontSize: 18, lineHeight: 1.8 }}>
             Join our talent network and get connected to opportunities across India and internationally. We&apos;re always looking for skilled workers, professionals, and technicians.
           </p>
         </div>
       </section>
 
       {/* Job Listings */}
-      <section style={{ padding: "80px 24px", background: "#0a0a1a" }}>
+      <section style={{ padding: "80px 24px", background: "#faf9f7" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 24 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, color: "#1a1a1a", marginBottom: 24 }}>
               Current <span className="gradient-text">Opportunities</span>
             </h2>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
@@ -109,10 +109,10 @@ export default function CareersPage() {
                     padding: "8px 24px", borderRadius: 100, cursor: "pointer",
                     fontWeight: 600, fontSize: 14, transition: "all 0.3s",
                     background: filter === cat
-                      ? "linear-gradient(135deg, #d4a017, #f0c040)"
-                      : "rgba(255,255,255,0.05)",
-                    color: filter === cat ? "#0a0a1a" : "rgba(255,255,255,0.7)",
-                    border: filter === cat ? "none" : "1px solid rgba(212,160,23,0.2)",
+                      ? "linear-gradient(135deg, #c9972c, #e8b84b)"
+                      : "#ffffff",
+                    color: filter === cat ? "#0d0d0d" : "#666",
+                    border: filter === cat ? "none" : "1px solid #ede9e0",
                   }}
                 >{cat}</button>
               ))}
@@ -125,21 +125,21 @@ export default function CareersPage() {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
                   <span style={{
                     background: job.category === "White Collar"
-                      ? "rgba(30,60,200,0.3)"
-                      : "rgba(212,160,23,0.15)",
-                    border: `1px solid ${job.category === "White Collar" ? "rgba(30,60,200,0.4)" : "rgba(212,160,23,0.3)"}`,
-                    color: job.category === "White Collar" ? "#8ab4f8" : "#f0c040",
+                      ? "rgba(30,60,200,0.08)"
+                      : "rgba(212,144,10,0.1)",
+                    border: `1px solid ${job.category === "White Collar" ? "rgba(30,60,200,0.2)" : "rgba(212,144,10,0.3)"}`,
+                    color: job.category === "White Collar" ? "#3b5fc0" : "#e8b84b",
                     fontSize: 11, padding: "3px 10px", borderRadius: 100, fontWeight: 600,
                   }}>{job.category}</span>
-                  <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 12 }}>{job.type}</span>
+                  <span style={{ color: "#888", fontSize: 12 }}>{job.type}</span>
                 </div>
-                <h3 style={{ color: "white", fontWeight: 700, fontSize: 18, marginBottom: 8 }}>{job.title}</h3>
-                <div style={{ color: "#f0c040", fontSize: 13, marginBottom: 12 }}>📍 {job.location}</div>
-                <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>{job.desc}</p>
+                <h3 style={{ color: "#1a1a1a", fontWeight: 700, fontSize: 18, marginBottom: 8 }}>{job.title}</h3>
+                <div style={{ color: "#d4900a", fontSize: 13, marginBottom: 12 }}>ðŸ“ {job.location}</div>
+                <p style={{ color: "#666", fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>{job.desc}</p>
                 <a href="#apply" style={{
                   display: "inline-block",
-                  background: "linear-gradient(135deg, #d4a017, #f0c040)",
-                  color: "#0a0a1a", fontWeight: 700, padding: "8px 20px",
+                  background: "linear-gradient(135deg, #c9972c, #e8b84b)",
+                  color: "#ffffff", fontWeight: 700, padding: "8px 20px",
                   borderRadius: 6, fontSize: 13, textDecoration: "none",
                 }}>Apply Now</a>
               </div>
@@ -151,24 +151,24 @@ export default function CareersPage() {
       {/* Application Form */}
       <section id="apply" style={{
         padding: "80px 24px",
-        background: "linear-gradient(135deg, #0d1b3e 0%, #1a0a2e 100%)",
+        background: "#ffffff",
       }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div className="section-divider" />
-            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, color: "white", marginBottom: 12 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, color: "#1a1a1a", marginBottom: 12 }}>
               Apply <span className="gradient-text">Now</span>
             </h2>
-            <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 15 }}>
+            <p style={{ color: "#777", fontSize: 15 }}>
               Submit your details and we&apos;ll match you with the right opportunity.
             </p>
           </div>
 
           {submitted ? (
             <div className="card-glass" style={{ padding: 48, textAlign: "center" }}>
-              <div style={{ fontSize: 60, marginBottom: 16 }}>✅</div>
-              <h3 style={{ color: "#f0c040", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>Application Submitted!</h3>
-              <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 15, lineHeight: 1.7 }}>
+              <div style={{ fontSize: 60, marginBottom: 16 }}>âœ…</div>
+              <h3 style={{ color: "#d4900a", fontSize: 22, fontWeight: 700, marginBottom: 12 }}>Application Submitted!</h3>
+              <p style={{ color: "#666", fontSize: 15, lineHeight: 1.7 }}>
                 Thank you for your interest. Our team will review your profile and get in touch with you shortly.
               </p>
             </div>
@@ -176,24 +176,24 @@ export default function CareersPage() {
             <form onSubmit={handleSubmit} className="card-glass" style={{ padding: 40 }}>
               <div className="form-row-2">
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Full Name *</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Full Name *</label>
                   <input required placeholder="Your full name" value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                 </div>
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Email Address</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Email Address</label>
                   <input type="email" placeholder="your@email.com" value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                 </div>
               </div>
               <div className="form-row-2">
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Phone Number *</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Phone Number *</label>
                   <input required placeholder="+91 XXXXXXXXXX" value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
                 </div>
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Role Applying For *</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Role Applying For *</label>
                   <select required value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}>
                     <option value="">Select a role</option>
@@ -206,7 +206,7 @@ export default function CareersPage() {
               </div>
               <div className="form-row-2">
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Years of Experience</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Years of Experience</label>
                   <select value={formData.experience}
                     onChange={(e) => setFormData({ ...formData, experience: e.target.value })}>
                     <option value="">Select experience</option>
@@ -218,19 +218,19 @@ export default function CareersPage() {
                   </select>
                 </div>
                 <div>
-                  <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Preferred Location</label>
+                  <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Preferred Location</label>
                   <input placeholder="City / Country" value={formData.location}
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })} />
                 </div>
               </div>
               <div style={{ marginBottom: 28 }}>
-                <label style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Additional Details</label>
+                <label style={{ color: "#666", fontSize: 13, display: "block", marginBottom: 8, fontWeight: 600 }}>Additional Details</label>
                 <textarea rows={4} placeholder="Tell us about your skills, certifications, or any relevant experience..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
               </div>
               <button type="submit" className="btn-primary" style={{ width: "100%", fontSize: 16, textAlign: "center" }}>
-                Submit Application →
+                Submit Application â†’
               </button>
             </form>
           )}
@@ -239,3 +239,4 @@ export default function CareersPage() {
     </div>
   );
 }
+

@@ -21,7 +21,7 @@ export default function Navbar() {
       top: 0, left: 0, right: 0,
       zIndex: 1000,
       background: "#ffffff",
-      boxShadow: "0 2px 20px rgba(0,0,0,0.15)",
+      boxShadow: "0 1px 12px rgba(0,0,0,0.08)",
       padding: "0 24px",
     }}>
       <div className="nav-inner">
